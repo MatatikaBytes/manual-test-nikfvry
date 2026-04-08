@@ -2,8 +2,8 @@ version: workspaces/v0.2
 name: manual test
 app_properties:
   WELCOME_DATASET_ALIAS: welcome
-default_data_store: Snowflake
-state_data_store: Snowflake
+default_data_store: Postgres Warehouse
+state_data_store: Postgres Warehouse
 dataset_paths:
 - analyze/datasets
 - .meltano/analyze/datasets
