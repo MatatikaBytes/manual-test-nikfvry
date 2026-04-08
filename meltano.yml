@@ -5,3 +5,16 @@ environments:
 - name: dev
 - name: staging
 - name: prod
+plugins:
+  extractors:
+  - name: tap-github
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-github.git
+  transformers:
+  - name: dbt
+    variant: dbt-labs
+    pip_url: dbt-core~=1.7.0 dbt-postgres~=1.7.0 dbt-snowflake~=1.7.0 dbt-bigquery~=1.7.0 certifi==2025.1.31
+  files:
+  - name: files-dbt
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/files-dbt@v1.3
