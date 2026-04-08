@@ -17,6 +17,10 @@ plugins:
   - name: target-snowflake
     variant: matatika
     pip_url: git+https://github.com/Matatika/target-snowflake--meltanolabs.git@v0.17.8-1
+  transforms:
+  - name: dbt-github
+    variant: matatika
+    pip_url: https://github.com/Matatika/dbt-tap-github@v0.2.0
   transformers:
   - name: dbt
     variant: dbt-labs
@@ -25,3 +29,6 @@ plugins:
   - name: files-dbt
     variant: matatika
     pip_url: git+https://github.com/Matatika/files-dbt@v1.3
+  - name: analyze-github
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/analyze-github@v0.3.0
