@@ -14,6 +14,9 @@ plugins:
   - name: target-postgres
     variant: matatika
     pip_url: git+https://github.com/Matatika/pipelinewise-target-postgres.git@v0.2.1
+  - name: target-snowflake
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/target-snowflake--meltanolabs.git@v0.17.8-1
   transformers:
   - name: dbt
     variant: dbt-labs
