@@ -10,6 +10,10 @@ plugins:
   - name: tap-github
     variant: matatika
     pip_url: git+https://github.com/Matatika/tap-github.git
+  loaders:
+  - name: target-postgres
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/pipelinewise-target-postgres.git@v0.2.1
   transformers:
   - name: dbt
     variant: dbt-labs
